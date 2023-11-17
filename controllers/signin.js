@@ -25,7 +25,7 @@ async function InsertverifyUser(name, email, password) {
 
 
 
-        const activationLink = `http://localhost:4000/signin/${token}`;
+        const activationLink = `https://fsd-jukz.onrender.com/signin/${token}`;
 
         const content = `
          <h4>hi there,</h4>

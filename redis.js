@@ -4,7 +4,10 @@ const dotenv=require('dotenv');
 dotenv.config()
 
 const redisclient=()=>{
-    return redis.createClient()
+    return redis.createClient({
+        url:process.env.redis_url
+    });
+
 }
 
 const client=redisclient();
